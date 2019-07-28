@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <title>ServiceBay</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -37,6 +38,18 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+
+  <script src="lib/jquery/jquery.min.js"></script>
+<script>
+    //$('#loaderevent').on('load', ();
+    function Onloaded() {
+      console.log('dfd');
+      $(".loader").fadeOut("slow");
+      $("#overlayer").fadeOut("slow");
+      $('body').css('overflow','auto')
+      // $('main').delay(2010).fadeIn("slow");
+    }
+  </script>
 </head>
 
 <body>
@@ -111,7 +124,7 @@
         </div>
 
         <div class="col-md-6 intro-img order-md-last order-first" style="display:grid">
-          <img src="img/land-img.png" alt="" class="img-fluid" style='width:75%; margin-left:auto;'>
+          <img src="img/land-img.png" alt="" class="img-fluid" style='width:75%; margin-left:auto;' id="loaderevent" onload="Onloaded()">
         </div>
       </div>
 
@@ -1057,7 +1070,6 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
@@ -1077,13 +1089,6 @@
 </body>
 
 </html>
-<script>
-  $(window).on('load', (function () {
-    $(".loader").delay(1500).fadeOut("slow");
-    $("#overlayer").delay(1500).fadeOut("slow");
-    $(main).delay(2010).fadeIn("slow");
-  }));
-</script>
 <!-- <script>
   function speak()
   {
