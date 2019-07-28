@@ -130,5 +130,32 @@
     grid-template-columns:none;
     grid-auto-flow: row !important;
   }
+  .about-content h2 
+  {
+    text-align: center;
+    
+  }
+  .features > h4 
+  {
+    font-size: 17px !important;
+  }
+  .custom-icons
+  {
+    display:block;
+    margin:auto;
+  }
+  .features p
+  {
+    text-align: justify;
+    margin:0px !important;
+
+  }
+  .features h4 {
+    display: block;
+    margin-left:0px !important;
+    margin-right:0px !important;
+    margin-top:5px;
+    text-align: center;
+  }
 
 }
