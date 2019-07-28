@@ -96,27 +96,31 @@
 }
 
 .custom-icons {
-  
+
   display: inline-block;
   width: 50px;
   height: 50px;
 
 }
+
 .custom-icons img {
   width: 50px;
   height: auto;
 }
-.features > h4 {
+
+.features>h4 {
   display: inline;
-  margin-left:10px !important;
+  margin-left: 10px !important;
 
 }
-.cust-btn-1
-{
-  margin-left:45px; 
+
+.cust-btn-1 {
+  margin-left: 45px;
 }
 
-
+.about-img {
+  margin-top: 130px !important;
+}
 
 @media only screen and (max-width: 500px) {
   #services .box p {
@@ -127,72 +131,75 @@
     margin-left: none !important;
     margin: auto !important;
   }
-  .payments-cont
-  {
+
+  .payments-cont {
     grid-auto-rows: 100px;
     grid-column-gap: none;
-    grid-template-columns:none;
+    grid-template-columns: none;
     grid-auto-flow: row !important;
   }
-  .about-content h2 
-  {
+
+  .about-content h2 {
     text-align: center;
-    
+
   }
-  .about-content h3 
-  {
+
+  .about-content h3 {
     text-align: center;
   }
+
   /* .features > h4 
   {
     font-size: 17px !important;
   } */
-  .custom-icons
-  {
-    display:block;
-    margin:auto;
+  .custom-icons {
+    display: block;
+    margin: auto;
   }
-  .features p
-  {
+
+  .features p {
     text-align: justify;
-    margin:0px !important;
+    margin: 0px !important;
 
   }
+
   .features h4 {
     display: block;
-    margin-left:0px !important;
-    margin-right:0px !important;
-    margin-top:5px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 5px;
     text-align: center;
   }
-  .footer-img
-  {
+
+  .footer-img {
     display: none;
   }
-  .footercol
-  {
+
+  .footercol {
     text-align: center;
   }
-  .footer-info > h3 
-  {
+
+  .footer-info>h3 {
     text-align: center;
   }
-  .footer-info > p 
-  {
+
+  .footer-info>p {
     text-align: justify;
+  }
+
+  .about-img {
+    margin-top: 30px !important;
   }
 }
 
 @media only screen and (max-width: 750px) {
 
-  .payments-cont
-  {
+  .payments-cont {
     grid-auto-rows: 100px;
     grid-column-gap: none;
-    grid-template-columns:none;
+    grid-template-columns: none;
     grid-auto-flow: row !important;
   }
 
 
 }
-
