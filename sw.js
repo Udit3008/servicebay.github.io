@@ -1,4 +1,11 @@
-self.addEventListener('install', function(e) {
+self.addEventListener('activate', function(event) {
+  event.waitUntil(self.clients.claim());
+  
+});
+
+self.addEventListener('install',()=>self.skipWaiting())
+
+self.addEventListener('activate', function(e) {
   e.waitUntil(
     caches.open('servicebay').then(function(cache) {
       return cache.addAll([
@@ -39,7 +46,8 @@ self.addEventListener('install', function(e) {
         '/img/clients/p3.png',
         '/img/clients/p4.png',
         '/img/clients/p5.png',
-        '/img/clients/p6.png'
+        '/img/clients/p6.png',
+        '/img/mainicon.png'
 
       ]).then(()=>self.skipWaiting())
       .catch(console.error);
