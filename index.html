@@ -12,8 +12,8 @@
   <meta name="theme-color" content="#6bc127">
   <meta name="author" content="Service Bay">
   <!-- Favicons -->
-  <link href="img/ico1.png" rel="icon">
-  <link href="img/ico1.png" rel="apple-touch-icon">
+  <link href="img/mainicon.png" rel="icon">
+  <link href="img/mainicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -33,7 +33,8 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-
+  <!-- PWA SCRIPTS AND LINKS INTEGRATED BY DM -->
+  <link rel="manifest" href="/manifest.json">
 
   <script src="lib/jquery/jquery.min.js"></script>
 <script>
@@ -99,7 +100,7 @@
                       <li><a href="#">Drop Down 5</a></li>
                     </ul>
                   </li> -->
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#contactussec">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -119,7 +120,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 intro-img order-md-last order-first" style="display:grid">
+        <div class="col-md-6 intro-img order-md-last order-first animated fadeInUp" style="display:grid">
           <img src="img/land-img.png" alt="" class="img-fluid" style='width:75%; margin-left:auto;' id="loaderevent" onload="Onloaded()">
         </div>
       </div>
@@ -259,7 +260,7 @@
               <h4 class="title"><a href="">On call Drivers</a></h4>
               <p class="description">Be it any occasion, any condition, any trip, any time. We provide on call drivers
                 after seeing their availablity. We also provide part-time and full-time drivers.</p>
-              <br><a href="#about" class="btn-1">Coming Soon</a>
+              <br><a href="" class="btn-1" onclick='alert("Thank you for showing interest. We will be coming up with this service soon!")'>Coming Soon</a>
             </div>
           </div>
 
@@ -272,7 +273,7 @@
                 we
                 also provide is our trust and ensure safety of your kid to our best with the help of GPS tracking.
               </p>
-              <br><a href="#about" class="btn-1">Coming Soon</a>
+              <br><a href="" class="btn-1" onclick='alert("Thank you for showing interest. We will be coming up with this service soon!")'>Coming Soon</a>
             </div>
           </div>
           <!-- <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
@@ -1013,7 +1014,7 @@
                   </ul>
                 </div>
 
-                <div class="footer-links">
+                <div class="footer-links" id="contactussec">
                   <h4>Contact Us</h4>
                   <p>
                     ServiceBay <br>
@@ -1083,14 +1084,19 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
-  <!-- Template Main Javascript File -->
+  <!-- Main Javascript File -->
   <script src="js/main.js"></script>
 
 </body>
 
+<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
 </html>
 <!-- <script>
   function speak()
