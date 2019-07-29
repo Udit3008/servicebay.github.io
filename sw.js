@@ -12,9 +12,9 @@ self.addEventListener('install', function(e) {
         '/img/ico3.png',
         '/img/ico4.png',
         '/img/ico5.png',
+        '/img/intro-img.svg',
         '/img/intro-bg.jpg',
         '/img/land-img.png',
-        '/img/ico1.png',
         '/img/rev1.jpg',
         '/img/rev2.jpg',
         '/img/rev3.jpg',
@@ -39,13 +39,15 @@ self.addEventListener('install', function(e) {
         '/img/clients/p3.png',
         '/img/clients/p4.png',
         '/img/clients/p5.png',
-        '/img/clients/p6.png',
+        '/img/clients/p6.png'
 
-      ]).then(()=>self.skipWaiting());
+      ]).then(()=>self.skipWaiting())
+      .catch(console.error);
     })
   );
  });
- self.addEventListener('activate', event => {
+ 
+self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 
