@@ -2,7 +2,7 @@
     "name": "ServiceBay",
     "short_name": "ServiceBay",
     "theme_color": "#6bc127",
-    "background_color": "#6bc127",
+    "background_color": "#ffffff",
     "display": "standalone",
     "scope":"/",
     "description": "ServiceBay operates on the idea to create a tech-enabled platform which can provide a better and trusted kitchen-supporter/maid to our consumers.",
