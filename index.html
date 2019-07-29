@@ -138,7 +138,52 @@
       <div class="container-fluid">
 
         <header class="section-header" style="margin-bottom:50px; ">
-          <h3>What do you get?</h3>
+          <h3>What do you get?
+            <!--
+              #include <iostream>
+using namespace std;
+int linear_search(int ar[],int first,int last,int item)
+{
+    if (first>last)
+    {
+        return -1;
+
+    }
+    else if (item==ar[first])
+    {
+        return first;
+    }
+    else {
+        linear_search(ar,first+1,last,item);
+    }
+}
+int main()
+{
+    int ar[10];
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    cout<<endl<<"Enter values of array: ";
+    for (int i=0; i< n; i++)
+    {
+
+        cin>>ar[i];
+    }
+    cout<<endl<<"Enter item to be searched: ";
+    int item;
+    cin >> item;
+    int res=linear_search(ar,0,n-1,item);
+    if(res==-1)
+    {
+        cout<<endl<<"Item not found";
+    }
+    else{
+        cout<<endl<<"Item found at: "<<res+1;
+    }
+}
+
+            -->
+          </h3>
         </header>
 
         <div class="row">
@@ -681,7 +726,7 @@
                 <h4>Alpha 2, Gr. Noida</h4>
                 <p>
                   Servicebay makes it easier for us to choose a better cook by it's one-day demo service of cook that's why I found
-                  a better cook than my previous one woth no struggle. Also on my cook's holiday I need not to worry, now I just sit on my
+                  a better cook than my previous one with no struggle. Also on my cook's holiday I need not to worry, now I just sit on my
                   couch and request for a substitute cook for my primary one.
                 </p>
               </div>
