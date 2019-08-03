@@ -47,7 +47,9 @@ self.addEventListener('activate', function(e) {
         '/img/clients/p4.png',
         '/img/clients/p5.png',
         '/img/clients/p6.png',
-        '/img/mainicon.png'
+        '/img/mainicon.png',
+        '/img/loader.svg'
+
 
       ]).then(()=>self.skipWaiting())
       .catch(console.error);
