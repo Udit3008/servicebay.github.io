@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <title>ServiceBay</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="ServiceBay is a group of friends who typically make things individually but shine when make things together.
+  At our core, ServiceBay operates on the idea to create a tech-enabled platform which can provide a better and trusted kitchen-supporter/maid to our consumers." name="description">
   <meta name="theme-color" content="#6bc127">
+  <meta name="author" content="Service Bay">
   <!-- Favicons -->
-  <!-- <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="img/mainicon.png" rel="icon">
+  <link href="img/mainicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -30,13 +33,20 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <!-- PWA SCRIPTS AND LINKS INTEGRATED BY DM -->
+  <link rel="manifest" href="/manifest.json">
 
-  <!-- =======================================================
-    Theme Name: Rapid
-    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  <script src="lib/jquery/jquery.min.js"></script>
+<script>
+    //$('#loaderevent').on('load', ();
+    function Onloaded() {
+
+      $(".loader").fadeOut("slow");
+      $("#overlayer").fadeOut("slow");
+      $('body').css('overflow','auto')
+      // $('main').delay(2010).fadeIn("slow");
+    }
+  </script>
 </head>
 
 <body>
@@ -90,7 +100,7 @@
                       <li><a href="#">Drop Down 5</a></li>
                     </ul>
                   </li> -->
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#contactussec">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -110,8 +120,8 @@
           </div>
         </div>
 
-        <div class="col-md-6 intro-img order-md-last order-first" style="display:grid">
-          <img src="img/land-img.png" alt="" class="img-fluid" style='width:75%; margin-left:auto;'>
+        <div class="col-md-6 intro-img order-md-last order-first animated fadeInUp" style="display:grid">
+          <img src="img/land-img.png" alt="" class="img-fluid" style='width:75%; margin-left:auto;' id="loaderevent" onload="Onloaded()">
         </div>
       </div>
 
@@ -131,8 +141,8 @@
           <div class="col-lg-6">
             <div class="why-us-img" style="width:80%;margin-left:30px;display:grid;justify-items:center;">
               <img src="img/whatwedo.png" alt="" class="img-fluid" style="width: 50%;">
-              <br>
-              <a href="https://forms.gle/LBLo4kQfu8TM7RxM7" class="btn-1" style="margin-left:45px">Get your cook</a>
+              <br><br>
+              <a href="https://forms.gle/LBLo4kQfu8TM7RxM7" class="btn-1 cust-btn-1">Get your cook</a>
             </div>
           </div>
 
@@ -150,7 +160,7 @@
 
               <div class="features wow bounceInUp clearfix">
                 <div class="custom-icons"><img src="img/ico3.png"></div>
-                <h4>Zero effort from your side</h4>
+                <h4>Least efforts from your side</h4>
                 <p>No more depending on the word of mouth. We will provide you the variety of service providers to
                   choose
                   from with their skills and reviews from our other consumers.</p>
@@ -250,7 +260,7 @@
               <h4 class="title"><a href="">On call Drivers</a></h4>
               <p class="description">Be it any occasion, any condition, any trip, any time. We provide on call drivers
                 after seeing their availablity. We also provide part-time and full-time drivers.</p>
-              <br><a href="#about" class="btn-1">Coming Soon</a>
+              <br><a href="" class="btn-1" onclick='alert("Thank you for showing interest. We will be coming up with this service soon!")'>Coming Soon</a>
             </div>
           </div>
 
@@ -263,7 +273,7 @@
                 we
                 also provide is our trust and ensure safety of your kid to our best with the help of GPS tracking.
               </p>
-              <br><a href="#about" class="btn-1">Coming Soon</a>
+              <br><a href="" class="btn-1" onclick='alert("Thank you for showing interest. We will be coming up with this service soon!")'>Coming Soon</a>
             </div>
           </div>
           <!-- <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
@@ -308,6 +318,8 @@
           <div class='payment-imgs'><img src="img/clients/p2.png" alt=""></div>
           <div class='payment-imgs'><img src="img/clients/p3.png" alt=""></div>
           <div class='payment-imgs'><img src="img/clients/p4.png" alt=""></div>
+          <div class='payment-imgs'><img src="img/clients/p5.png" alt=""></div>
+          <div class='payment-imgs'><img src="img/clients/p6.png" alt="" style="width: 50px;"></div>
 
         </div>
 
@@ -315,19 +327,23 @@
     </section>
     <section id="about" style="padding-top:20px;">
 
-      <div class="container">
+      <div class="container" style="margin-top:5pc;">
+        <header class="section-header">
+            <h3 class="who-we-are-h3">Who We Are?</h3>
+        </header>
+
+
         <div class="row">
 
           <div class="col-lg-5 col-md-6">
-            <div class="about-img" style="margin-top:130px;">
+            <div class="about-img">
               <img src="img/avatar3.png" alt="">
             </div>
           </div>
 
           <div class="col-lg-7 col-md-6">
             <div class="about-content">
-              <h2>Who We Are?</h2>
-              <h3>Services that Inspire people</h3>
+                <h3>Services that Inspire</h3>
               <p><i>ServiceBay is a group of friends who typically make things individually but shine when make things
                   together.</i><br><br>
                 At our core, ServiceBay operates on the idea to create a tech-enabled platform which can provide a
@@ -473,7 +489,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview"
+                  <a href="img/portfolio/p1.jpg" data-lightbox="portfolio" data-title="Indian Spices" class="link-preview"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -488,7 +504,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3"
+                  <a href="img/portfolio/p2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Salad"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -503,7 +519,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p4.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2"
+                  <a href="img/portfolio/p4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kitchen Accessories"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -518,7 +534,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2"
+                  <a href="img/portfolio/p6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Vegetables and Spices"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -533,7 +549,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2"
+                  <a href="img/portfolio/p3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Murg Rara Biryani"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -548,7 +564,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p7.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3"
+                  <a href="img/portfolio/p7.jpg" class="link-preview" data-lightbox="portfolio" data-title="Indian Tadka"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -563,7 +579,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1"
+                  <a href="img/portfolio/p5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kitchen Sweeping"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -578,7 +594,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3"
+                  <a href="img/portfolio/p8.jpg" class="link-preview" data-lightbox="portfolio" data-title="Fresh Veggies"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -593,7 +609,7 @@
                 <h4><a href="#"></a></h4>
                 <p></p>
                 <div>
-                  <a href="img/portfolio/p9.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1"
+                  <a href="img/portfolio/p9.jpg" class="link-preview" data-lightbox="portfolio" data-title="Chef's Knife"
                     title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
@@ -634,32 +650,34 @@
               </div>
 
               <div class="testimonial-item">
-                <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <img src="img/rev2.jpg" class="testimonial-img" alt="">
+                <h3>Suraj Singh</h3>
+                <h4>Alpha 2, Gr. Noida</h4>
                 <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  I would like to thank servicebay for arranging a good cook for me. For a college student residing in
+                  flat, it's very difficult to get good quality tasty food but servicebay provided me a perfect cook without
+                  letting me experience harsh summers of NCR.
                 </p>
               </div>
 
               <div class="testimonial-item">
-                <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <img src="img/rev3.jpg" class="testimonial-img" alt="">
+                <h3>Nikita Jain</h3>
+                <h4>Alpha 2, Gr. Noida</h4>
                 <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  Probably servicebay would be the best cook providing platform. Their customer-focusing strategies are great.
+                  I feel so tension-free as the cook working in my home is verified and cooks tasty food for me and my friends.
                 </p>
               </div>
 
               <div class="testimonial-item">
-                <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <img src="img/rev4.jpg" class="testimonial-img" alt="">
+                <h3>Danish Jamal</h3>
+                <h4>Alpha 2, Gr. Noida</h4>
                 <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  Servicebay makes it easier for us to choose a better cook by it's one-day demo service of cook that's why I found
+                  a better cook than my previous one with no struggle. Also on my cook's holiday I need not to worry, now I just sit on my
+                  couch and request for a substitute cook for my primary one.
                 </p>
               </div>
 
@@ -901,7 +919,7 @@
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">What about the holidays he/she take?
+            <a data-toggle="collapse" href="#faq5" class="collapsed">What about the holidays he/she takes?
             <i class="ion-android-remove"></i></a>
             <div id="faq5" class="collapse" data-parent="#faq-list">
               <p>
@@ -927,7 +945,7 @@
             <i class="ion-android-remove"></i></a>
             <div id="faq7" class="collapse" data-parent="#faq-list">
               <p>
-              Yeah!, Only our team will manage all your required services by our cook for the entire service period you hire him/her for.
+              Yeah! For you our team will manage all your required services by our cook for the entire service period you hire him/her for.
               </p>
             </div>
           </li>
@@ -984,25 +1002,26 @@
 
               </div>
 
-              <div class="col-sm-6">
+              <div class="col-sm-6 footercol" >
                 <div class="footer-links">
+                  <br>
                   <h4>Useful Links</h4>
                   <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
 
                   </ul>
                 </div>
 
-                <div class="footer-links">
+                <div class="footer-links" id="contactussec">
                   <h4>Contact Us</h4>
                   <p>
                     ServiceBay <br>
                     Alpha 2 <br>
                     Greater Noida, India <br>
-                    <strong>Phone:</strong>+917068646953<br>
-                    <strong>Email:</strong> servicebay1921@gmail.com<br>
+                    <strong></strong> +917068646953, +918808336223<br>
+                    <strong></strong> servicebay1921@gmail.com<br>
                   </p>
                 </div>
 
@@ -1055,7 +1074,6 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
@@ -1066,22 +1084,20 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
-  <!-- Template Main Javascript File -->
+  <!-- Main Javascript File -->
   <script src="js/main.js"></script>
 
 </body>
 
-</html>
 <script>
-  $(window).on('load', (function () {
-    $(".loader").delay(2000).fadeOut("slow");
-    $("#overlayer").delay(2000).fadeOut("slow");
-    $(main).delay(2010).fadeIn("slow");
-  }));
-</script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
+</html>
 <!-- <script>
   function speak()
   {
